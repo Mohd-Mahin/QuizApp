@@ -1,16 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <include
+        layout="@layout/toolbar"
+        />
     <TextView
-        android:id="@+id/textView2"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:text="@string/question_1"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorGreen"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_margin="20dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        tools:ignore="UnknownId">
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/option_1"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/option_2"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/option_3"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/option_4"
+            android:textSize="18sp"
+            />
+    </RadioGroup>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:id="@+id/nextButton"
+        android:text="@string/next"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="165dp"
-        android:layout_marginRight="165dp"
-        android:layout_marginBottom="326dp"
-        android:text="Quiz Page" />
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="onNext"
+        />
 </RelativeLayout>

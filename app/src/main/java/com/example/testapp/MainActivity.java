@@ -43,18 +43,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.easy_button:
                 pressed = "easy_mode";
-                mediumButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
-                hardButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
+                mediumButton.setBackgroundColor(Color.parseColor("#325C35"));
+                hardButton.setBackgroundColor(Color.parseColor("#325C35"));
                 break;
             case R.id.medium_button:
                 pressed = "medium_mode";
-                hardButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
-                easyButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
+                hardButton.setBackgroundColor(Color.parseColor("#325C35"));
+                easyButton.setBackgroundColor(Color.parseColor("#325C35"));
                 break;
             case R.id.hard_button:
                 pressed = "hard_mode";
-                mediumButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
-                easyButton.setBackgroundColor(Color.parseColor("#FF2E7D32"));
+                mediumButton.setBackgroundColor(Color.parseColor("#325C35"));
+                easyButton.setBackgroundColor(Color.parseColor("#325C35"));
                 break;
             case R.id.start_quiz:
                 Intent intent = new Intent(getBaseContext(), Quiz.class);
