@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/restart_quiz"
+        app:showAsAction="ifRoom"
+        android:title="Play Again"
+        android:icon="@mipmap/restartquiz"
+        >
+    </item>
+    <item
+        android:id="@+id/quit_quiz"
+        app:showAsAction="always"
+        android:title="Quit"
+        android:icon="@mipmap/arrow"
+        >
+    </item>
+</menu>
